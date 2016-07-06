@@ -1,0 +1,25 @@
+---
+title: "chapter-6"
+output: html_document
+---
+## Conceptual
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+*1*
+
+a) best subset - not constrained by previous set selections
+b) best subset? maybe it's overfitting, but why would forward or backward perform better?
+c) i. true ii. true iii. false iv. false v. false
+
+*9*
+*a)*
+```{r pressure, echo=FALSE}
+library(MASS)
+gam.fit0=lm(nox~poly(dis,3,raw=T),data=Boston)
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
